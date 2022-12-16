@@ -13,6 +13,9 @@ export class Verse {
 
   @Prop({ required: true })
   verses: number[];
+
+  @Prop({ required: true })
+  content: string;
 }
 
 export const VerseSchema = SchemaFactory.createForClass(Verse);
